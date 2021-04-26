@@ -1,0 +1,36 @@
+﻿@model ModelViewControllerProject.Models.OdpowiedziGoscia
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Dziękuję</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #c0c0c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h1>Dziękujemy, @Model.Imie!</h1>
+        <div class="lead">
+            @if (Model.Odpowiedz == true)
+            {
+                @:Dziękujemy za wypełnienie. Czekamy na Ciebie! Ciastka są już gotowe :)
+            }
+            else
+            {
+                @:Szkoda, że ​​nie przyjdziesz:( Zapraszamy ponownie
+            }
+        </div>
+    </div>
+</body>
+</html>

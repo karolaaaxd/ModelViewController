@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <style>
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #69f8cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+       <h1>Zapraszamy :) </h1>
+        <h2>Na przyjęcie z Ciastkami</h2>
+        <h3>Wystarczy wypełnić formularz</h3>
+        <br />
+        <div class="btn btn-danger"> <!--czerwony guzik -->
+            @Html.ActionLink("Formularz Zgłoszeniowy", "Formularz")
+        </div>
+    </div>
+</body>
+</html>
